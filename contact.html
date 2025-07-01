@@ -68,16 +68,34 @@
     </main>
     <div id="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/scripts.js"></script>
     <script>
-        fetch('./header.html')
+        fetch('header.html')
             .then(res => res.text())
-            .then(data => document.getElementById('header').innerHTML = data);
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
 
-        fetch('./footer.html')
+                // 🔽 GDPR-banner logica pas uitvoeren NADAT de header is geladen
+                const banner = document.getElementById('cookieConsentBanner');
+                const acceptBtn = document.getElementById('acceptCookies');
+
+                if (banner && acceptBtn) {
+                    if (!localStorage.getItem('infoBannerDismissed')) {
+                        banner.style.display = 'block';
+                    } else {
+                        banner.style.display = 'none';
+                    }
+
+                    acceptBtn.addEventListener('click', function () {
+                        localStorage.setItem('infoBannerDismissed', 'true');
+                        banner.style.display = 'none';
+                    });
+                }
+            });
+
+        fetch('footer.html')
             .then(res => res.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
+    <script src="./js/scripts.js"></script>
 </body>
-
 </html>
