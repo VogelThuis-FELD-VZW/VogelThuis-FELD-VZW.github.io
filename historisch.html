@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="VogelThuis-Feld VZW" />
+    <meta name="author" content="vrijwillige webdesigner" />
+    <title>VogelThuis-Feld VZW</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <div id="header"></div>
+        <header class="py-5">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5">
+                            <h1 class="fw-bolder mb-3">Het ontstaan van het vogelopvangcentrum</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About section one-->
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src=".//assets/historisch-IMG-1.png"
+                            alt=" ..." /></div>
+                    <div class="col-lg-6">
+                        <p class="lead fw-normal text-muted mb-0">In de zomer van 1977 rijpte bij Florent en Eddy de
+                            Koning het idee om een vogelasiel op te richten. Dit omdat er hier en daar wel eens een
+                            gewonde vogel werd gevonden en de mensen riepen dan de hulp in van vader en zoon De Koning.
+                            Deze twee dierenvrienden waren al heel lang bezig met het verzorgen van vogels en dieren die
+                            ze vonden. In 1978 werd dan het asiel geboren in Kreek 54. Daar zijn Florent en Eddy
+                            begonnen met de bouw van opvangkooien om de gewonde, zieke en uitgeputte vogels te
+                            verzorgen. Zo werd het vogelopvangcentrum gestart met de nodige vergunningen en met
+                            medewerking van M. Smet, R. Arnhem, J. Rots van Vogelbescherming Vlaanderen. Bij het
+                            overlijden van Florent in 2006 verhuisd het vogelopvangcentrum naar Eddy in de Kreek 52 waar
+                            het tot op heden nog altijd is.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section two-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src=".//assets/historisch-IMG-2.png" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <p class="lead fw-normal text-muted mb-0">Sinds 2004 is het VOC Kieldrecht een officiële vzw.
+                            Sindsdien is het opvangcentrum sterk geëvolueerd. Zo sprongen Eddy en Denise mee op de
+                            digitale trein van computers, e-mail, websites,... Na wat studeerwerk en enkele cursussen
+                            links en rechts, kregen ze deze onbekende media onder de knie. In 2009 werden er langs de
+                            straatkant opvangbakken voorzien en door de jaren heen werd het centrum steeds verder
+                            uitgebouwd.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+
+</html>

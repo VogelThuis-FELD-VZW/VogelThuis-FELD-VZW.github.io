@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="VogelThuis-Feld VZW" />
+    <meta name="author" content="vrijwillige webdesigner" />
+    <title>VogelThuis-Feld VZW</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <div id="header"></div>
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">De voornaamste bezigheden van het vogelopvangcentrum</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">In het opvangcentrum staan ze dag en nacht klaar om de vogels en dieren op te vangen. Wanneer de vogels of dieren binnengebracht worden dan krijgen ze de eerste zorgen toegediend. De jonge vogels worden met de hand groot gebracht. De vogels krijgen na hun herstelperiode een ring aan de poot voor ze terug in de natuur kunnen. Dit word gedaan door een erkende vogelringer.</p>
+                                <p class="lead fw-normal text-white-50 mb-4">De meeste verwondingen worden veroorzaakt door verkeersongevallen, jachtwonden, vergiftiging en hoogspanningskabels. De kleine vogels worden verzorgd in de binnenkooien. De grote vogels gaan na de eerste zorgen naar de buitenkooien om daar verder te herstellen. Het zijn niet alleen gewonde vogels of dieren die wij opvangen. Bij bijvoorbeeld inbeslagnames word er ook beroep gedaan op het vogelopvangcentrum. Deze dieren worden dan verzorgd tot ze weer helemaal hersteld zijn en dan word er gewacht op een besluit van het gerecht wat er met de dieren mag gebeuren.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./assets/Index-Header-IMG.png" alt="Denise die een baby uil vast houdt" /></div>
+                    </div>
+                </div>
+            </header>
+                    <!-- Team members section-->
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="fw-bolder">Ons team</h2>
+                    <p class="lead fw-normal text-muted mb-5">Toegewezen aan de zorg van de dieren</p>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/historisch-IMG-Denise.png"
+                                alt="..." />
+                            <h5 class="fw-bolder">Denise De Nijs</h5>
+                            <div class="fst-italic text-muted">Zaakvoerder</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/historisch-IMG-Denise.png"
+                                alt="..." />
+                            <h5 class="fw-bolder">Denise De Nijs</h5>
+                            <div class="fst-italic text-muted">Zaakvoerder</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/historisch-IMG-Denise.png"
+                                alt="..." />
+                            <h5 class="fw-bolder">Denise De Nijs</h5>
+                            <div class="fst-italic text-muted">Zaakvoerder</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/historisch-IMG-Denise.png"
+                                alt="..." />
+                            <h5 class="fw-bolder">Denise De Nijs</h5>
+                            <div class="fst-italic text-muted">Zaakvoerder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <div id="footer"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/scripts.js"></script>
+        <script>
+            fetch('header.html')
+                .then(res => res.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+
+            fetch('footer.html')
+                .then(res => res.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+    </body>
+</html>

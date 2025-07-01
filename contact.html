@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="VogelThuis-Feld VZW" />
+    <meta name="author" content="vrijwillige webdesigner" />
+    <title>VogelThuis-Feld VZW</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <div id="header"></div>
+        <header class="py-5">
+            <div class="container px-5">
+                <div class="row justify-content-start">
+                    <div class="col-xxl-12">
+                        <div class="text-center my-5">
+                            <h1 class="fw-bolder mb-3">Neem Contact op met ons</h1>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6">
+                        <div class="text-start my-5">
+                            <h1 class="fw-bolder mb-3">Het vogelopvangcentrum bezoeken?</h1>
+                            <p>Er worden in het opvangcentrum ook rondleidingen gegeven aan <br> 
+                                scholen, groepen en verenigingen. <br>
+                                Men kan telefonisch of via e-mail hiervoor een afspraak maken.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-top">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">VogelThuis-Feld VZW</h2>
+                        <ul class="list-group list-group-flush lead fw-normal text-muted mb-0">
+                            <li class="list-group-item bg-transparent"><b>Adres: </b>Kreek 52, 9130 Beveren-Kruibeke-Zwijndrecht België</li>
+                            <li class="list-group-item bg-transparent"><a class="nav-link" href="tel:+32472365103"><b>Tel:</b>+32 472 36 51 03</a></li>
+                            <li class="list-group-item bg-transparent"><a class="nav-link" href="mail:Info@VogelThuis-FELD.be"><b>Email: </b>Info@VogelThuis-FELD.be</a></li>
+                            <li class="list-group-item bg-transparent"><b>IBAN: </b>BE29 7512 0532 2364</li>
+                            <li class="list-group-item bg-transparent"><a class="nav-link" href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?nummer=0883.993.860"><b>Bedrijfsnummer: </b>0883.993.860</a></li>
+                            <li class="list-group-item bg-transparent"><b>Rechtsvorm: </b>Vereniging zonder winstoogmerk</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Telefoonis Bereikbaar: </h2>
+                        <ul class="list-group list-group-flush lead fw-normal text-muted mb-0">
+                            <li class="list-group-item bg-transparent"><b>Maandag: </b>9:00 - 17:00</li>
+                            <li class="list-group-item bg-transparent"><b>Dinsdag: </b>9:00 - 17:00</li>
+                            <li class="list-group-item bg-transparent"><b>Woensdag: </b>9:00 - 17:00</li>
+                            <li class="list-group-item bg-transparent"><b>Donderdag: </b>9:00 - 17:00</li>
+                            <li class="list-group-item bg-transparent"><b>Vrijdag: </b>9:00 - 17:00</li>
+                            <li class="list-group-item bg-transparent"><b>Zaterdag: </b>Niet/Noodgeval</li>
+                            <li class="list-group-item bg-transparent"><b>Zondag: </b>Niet/Noodgeval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        fetch('./header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('./footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+
+</html>
